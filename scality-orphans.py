@@ -86,8 +86,6 @@ class Scality_orphans():
                            out_file.write(line)             
 
     def wget_file(self, URL, filename, username, password):
-        username = 'admin'
-        password = '<ojtazi#jUv8!qua'
         try:
             response = requests.get(URL, timeout=120, verify=False, auth=(username, password))
             #response.raise_for_status()
